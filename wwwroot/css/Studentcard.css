@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el contenedor */
+    flex-wrap: wrap; /* Permite que las tarjetas se ajusten a varias líneas */
+    background-color: #f4f4f4; /* Color de fondo de la página */
+}
+
+#cardsContainer {
+    display: flex;
+    justify-content: center; /* Centra el contenido dentro del contenedor */
+    flex-wrap: wrap; /* Permite que las tarjetas se ajusten a varias líneas */
+    max-width: 100%; /* Evita que el contenedor se expanda demasiado */
+    margin-top: 120px; /* Aleja el contenedor 120px del borde superior */
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    display: flex; /* Cambia a flex para alinear contenido interno */
+    flex-direction: column; /* Alinea elementos de forma vertical */
+    width: 200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    background-color: white; /* Color de fondo de la tarjeta */
+    border-radius: 8px; /* Bordes redondeados */
+    transition: transform 0.2s; /* Animación de transformación */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Efecto de aumento al pasar el mouse */
+}
+
+.card img {
+    width: 100%; /* Hace que la imagen ocupe todo el ancho de la tarjeta */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 8px 8px 0 0; /* Bordes redondeados solo en la parte superior */
+}
+
+.card h3 {
+    font-size: 18px; /* Tamaño de fuente para el nombre */
+    margin: 10px 0; /* Espacio vertical */
+}
+
+.card p {
+    font-size: 14px; /* Tamaño de fuente para el párrafo */
+    color: #666; /* Color de texto más tenue */
+}

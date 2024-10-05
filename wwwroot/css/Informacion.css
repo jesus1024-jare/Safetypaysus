@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #f4f4f4; /* Color de fondo */
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    height: 90vh; /* Ocupa toda la altura de la ventana */
+}
+
+.course-details {
+    background-color: #fff; /* Fondo blanco para la tarjeta */
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espacio interior */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    max-width: 700px; /* Ancho máximo de la tarjeta */
+    text-align: justify; /* Alinear texto a la izquierda */
+}
+
+h1, h3 {
+    margin-bottom: 10px; /* Espacio debajo de los encabezados */
+}
+
+.Precio {
+    margin-top: 10px; /* Espacio arriba de la sección de precios */
+}
+
+.error-message {
+    color: red; /* Color del mensaje de error */
+    text-align: center; /* Centrar el mensaje de error */
+    margin-top: 20px; /* Espacio encima del mensaje de error */
+}

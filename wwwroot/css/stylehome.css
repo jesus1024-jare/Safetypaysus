@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: 
+        linear-gradient(rgba(0, 132, 214, 0.5), rgba(0, 0, 0, 0.5)), /* Gradiente semi-transparente */
+        url('Imagenes/Image.jpeg'); /* Ruta de la imagen */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-size: auto; /* Cambia a 'cover' si quieres que cubra todo el fondo */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Fija la imagen de fondo durante el scroll */
+}
+
+footer {
+    position: fixed;
+    bottom: 0; /* Mantener el footer en la parte inferior */
+    width: 100%; /* Ancho completo */
+    height: 100px; /* Altura del footer */
+    background-color: white; /* Fondo blanco */
+    color: black; /* Texto negro */
+    display: flex; /* Utiliza flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    padding: 20px 0; /* Espaciado superior e inferior */
+}
+
+.container-imagenes .imagenes {
+    align-items: center;
+}

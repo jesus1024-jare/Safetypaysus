@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body, html {
+    height: 100%;
+    background: 
+        url('Imagenes/1920-construction-site-in-thailand.jpg') no-repeat center center fixed;
+    background-size: cover; /* Cambiado a cover para que cubra toda la pantalla */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.5); /* Añadido transparencia a la sombra */
+    background-color: white;
+    padding: 20px; /* Añade un poco de espacio interior */
+}
+
+.Contenedor-imagen img {
+    width: 600px;
+    height: 400px;
+    margin-left: 20px;
+    object-fit: cover;
+}
+
+.Contenedor-Formulario {
+    color: #2196f3;
+    margin-left: 100px;
+    margin-right: 100px;
+    max-width: 600px;
+}
+
+h2 {
+    text-align: center;
+    width: 350px;
+    padding: 12px;
+}
+
+.grupo-inputs {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.grupo-inputs input {
+    width: 350px;
+    padding: 12px;
+    border: 1px solid transparent;
+    background-color: #e3f2fd;
+    border-left: 5px solid #ffc300;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.grupo-inputs input:focus {
+    border-left: 5px solid #e3f2fd;
+    outline: none;
+    border: 1px solid #e3f2fd;
+}
+
+.grupo-inputs input:focus::placeholder {
+    color: transparent;
+}
+
+.grupo-inputs input:hover {
+    transform: scale(1.1);
+}
+
+.check {
+    color: #90caf9;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.check label:hover {
+    transform: scale(1.1);
+    color: #42a5f5;
+    cursor: pointer;
+}
+
+.check input[type="checkbox"]:hover {
+    cursor: pointer;
+}
+
+.check .member {
+    margin-left: 38px;
+}
+
+button {
+    width: 350px;
+    padding: 12px;
+    border-radius: 20px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border-color: transparent;
+    background-color: #1976d2;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    justify-content: center;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background-color: #2196f3;
+    cursor: pointer;
+}
